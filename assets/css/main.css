@@ -5,6 +5,12 @@ html {
 	box-sizing: border-box;
 }
 
+#page-wrapper {
+	width: 100%;
+	margin: auto;
+	display: flex;
+}
+
 *,
 *:before,
 *:after {
@@ -20,49 +26,43 @@ body {
 	line-height: 1.65;
 }
 
+ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-
-
-a {
-
-	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-	color: #ffffff;
-	text-decoration: none;
 }
 
-a:hover {
-	border-bottom-color: transparent;
-	color: #ffffff !important;
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 200;
+	margin: auto;
+	width: 50%;
+	height: inherit;
 }
 
 
 
 
 
-h1 {
+
+h2 {
 	color: #ffffff;
 	font-family: Raleway, Helvetica, sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-	margin: 0 0 1em 0;
+	margin: auto;
 	text-transform: uppercase;
 }
 
 
 
 
-@media screen and (max-width: 736px) {
 
-	h2 {
-		font-size: 1em;
-	}
-
-	h3 {
-		font-size: 0.8em;
-	}
-
-}
 
 
 /* Header */
@@ -77,50 +77,12 @@ h1 {
 	top: 0;
 	width: 100%;
 	z-index: 100;
-
-}
-
-#iconcart {
-	position: absolute;
-	right: 0;
-	cursor: pointer;
-	color: white;
-	border-radius: 5px;
-	border: 1px solid #262626;
-	margin: 15px 30px;
-	font-size: 29px;
-	background: #262626;
-	height: 45px;
-	width: 45px;
-	text-align: center;
-	line-height: 45px;
-
-}
-
-#iconuser {
-	position: absolute;
-	right: 58px;
-	cursor: pointer;
-	color: white;
-	border-radius: 5px;
-	border: 1px solid #262626;
-	margin: 15px 30px;
-	font-size: 29px;
-	background: #262626;
-	height: 45px;
-	width: 45px;
-	text-align: center;
-	line-height: 45px;
-}
-
-#icon {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	position: absolute;
-	z-index: 200;
-	margin: auto
+	justify-content: center;
 }
+
+
 
 
 
