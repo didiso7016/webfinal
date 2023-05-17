@@ -3,6 +3,7 @@
 #righticon {
     top: -20px;
     width: 100%;
+    background-color: red;
 }
 
 #iconcart {
@@ -38,7 +39,7 @@
     line-height: 45px;
 }
 
-#icon {}
+
 
 
 .search_wrap .input {
