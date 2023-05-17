@@ -49,7 +49,7 @@ ul {
 }
 
 
-#logo p {
+.logo p {
 	color: #ffffff;
 	font-family: Raleway, Helvetica, sans-serif;
 	font-weight: 700;
@@ -58,7 +58,7 @@ ul {
 	text-transform: uppercase;
 }
 
-#logo img {}
+
 
 
 
