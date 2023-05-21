@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    top: 320px;
+    top: 110px;
     height: auto;
     width: 100%;
     margin: auto;
@@ -12,6 +12,8 @@
 
 .container {
     width: 100%;
+    display: inline-block;
+    vertical-align: middle;
     /*background-color: red;*/
 }
 
@@ -22,15 +24,29 @@
 
     position: relative;
 
-    margin: 2%;
+    margin: 5% auto;
     border-radius: 20px 20px;
-    background-color: #6d8593;
+
     height: auto;
-    width: auto;
+    width: 60%;
     padding: 10px;
 }
 
+#container-per1 {
+    background-color: #4E5851;
+}
 
+#container-per2 {
+    background-color: #8E7618;
+}
+
+#container-per3 {
+    background-color: #E5C646;
+}
+
+#container-per4 {
+    background-color: #F4E7BB;
+}
 
 
 .container-thing {
@@ -50,10 +66,10 @@
 }
 
 .container-txt {
-    top: -20px;
+    top: 5px;
     position: inherit;
-    padding-top: 30px;
-    right: 100px;
+    padding: 2px;
+    right: 30%;
     text-align: left;
     line-height: 50px;
     font-size: 20px;
@@ -76,7 +92,8 @@
 
 }
 
-.container-img img:hover {
+
+.container-img :hover {
     animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
@@ -95,28 +112,13 @@
 }
 
 
-/* .container-img img:hover {
-    animation: myAnim 1s ease 0s 1 normal forwards;
-}
 
-@keyframes myAnim {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        transform: scale(1);
-    }
-
-
-
-    100% {
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
-        transform: scale(1.1);
-    }
-} */
 
 /* icon */
 #iconarrow {
+    top: 40%;
     position: absolute;
-    right: 30%;
+    right: 20%;
     cursor: pointer;
     color: white;
     border-radius: 5px;
@@ -138,4 +140,51 @@
     font-family: 'Gill Sans';
     font-size: 50px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .container-per {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .container-txt {
+
+        right: 40%;
+
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container-per {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .container-txt {
+
+        right: 10%;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 350px) {
+
+    .container-per {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
 }
