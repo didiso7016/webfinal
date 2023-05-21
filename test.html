@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/sliderbar.css" />
-    <script src="https://kit.fontawesome.com/605c912c10.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/test.css">
 </head>
 <body>
-  <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-        <a href="#" class="active">
-            <i class="fa-solid fa-house"></i>
-            <span>首頁</span>
-          </a>
-
-        <a href="#" >
-            <i class="fa-brands fa-apple"></i>
-          <span>Apple</span>
-        </a>
-
-        <a href="#">
-            <i class="fa-brands fa-google"></i>
-          <span>Pixel</span>
-        </a>
-
-        <a href="#">
-          <i class="fa-solid fa-mobile"></i>
-          <span>Sony</span>
-        </a>
-
-        <a href="#">
-          <i class="fa-solid fa-mobile-button"></i>
-          <span>Samsung</span>
-        </a>
-
-      </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/10III.png" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/i11.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/10III.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+   
 </body>
 </html>
