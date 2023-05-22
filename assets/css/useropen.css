@@ -1,0 +1,39 @@
+.opening {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    color: black;
+}
+
+
+.titlehr {
+    position: relative;
+    border: #898986 solid;
+    top: 170px;
+}
+
+.usernav {
+    position: relative;
+    font-size: 35px;
+    top: 140px;
+
+}
+
+.usernav li {
+    margin: 30px;
+}
+
+.usermain {
+    text-decoration: underline;
+    color: black;
+    font-weight: 1000;
+    background-color: #d38739;
+}
+
+.userother {
+    color: black;
+    font-weight: 400;
+    background-color: #c47b2a;
+}
