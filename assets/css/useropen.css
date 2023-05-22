@@ -29,11 +29,19 @@
     text-decoration: underline;
     color: black;
     font-weight: 1000;
-    background-color: #d38739;
+    background-color: #88A8E9;
 }
 
 .userother {
     color: black;
     font-weight: 400;
-    background-color: #c47b2a;
+    background-color: #88A8E9;
+}
+
+.usermain:hover {
+    background-color: #B1CCFF;
+}
+
+.userother:hover {
+    background-color: #B1CCFF;
 }
