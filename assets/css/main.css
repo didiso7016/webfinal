@@ -59,6 +59,14 @@ ul {
 	text-transform: uppercase;
 }
 
+.logo img {
+	left: 12%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 
