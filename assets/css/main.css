@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background-color: #fff;
+	background-color: #bbc1c1;
 	color: #ffffff;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 16.5pt;
@@ -43,7 +43,7 @@ ul {
 	cursor: pointer;
 	position: absolute;
 	z-index: 200;
-	margin: auto;
+	left: 42%;
 	height: inherit;
 	max-width: 100%;
 	max-height: 100%;
