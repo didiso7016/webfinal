@@ -19,12 +19,12 @@ img {
     justify-content: center;
     position: relative;
     max-width: 100%;
-    left: 19%;
+
 }
 
 /* Slideshow container */
 .slideshow-container {
-
+    padding: 20px;
     max-width: 60%;
     position: relative;
     top: 160px;
