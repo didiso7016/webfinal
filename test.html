@@ -1,35 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/test.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/useropen.css">
+    <link rel="stylesheet" href="assets/css/userorder.css" />
+    <link rel="stylesheet" href="assets/css/righticon.css" />
+		<link rel="stylesheet" href="assets/css/slide.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/sliderbar.css" />
+
+    <title>Document</title>
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/10III.png" style="width:100%">
-            <div class="text">Caption Text</div>
+    <div class="container">
+        <div class="tab_box">
+            <button class="tab_btn">1</button>
+            <button class="tab_btn">2</button>
+            <button class="tab_btn">3</button>
+            <button class="tab_btn">4</button>
+            <div class="line"></div>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/i11.png" style="width:100%">
-            <div class="text">Caption Two</div>
+        <div class="content_box">
+            <div class="content"><!-- 個人資訊-1 -->
+                <div class="userinfor">
+                    <i class="fa-solid fa-circle-user" style="color: black;" ></i>
+                    <p style="font-size: 60px; font-weight: 800;">名字是</p>
+                </div>
+        
+                <div class="useredit">
+                <a href="#" target="_blank">
+                <i class="fa-solid fa-pen-to-square" style="color: black;"  ></i>
+                </a>
+                <p style="font-size: 30px; font-weight: 600; ">編輯個人資料</p>
+                </div>
+                <!-- left+right -->
+                <div class="userwholeinfor">
+            <!-- left+right -->
+                    <div class="userleft">
+        
+                    <div class="usercon">
+                        <span style= "display:block">姓名：</span> 
+                    </div>
+        
+                    <div class="usercon">
+                        <span style= "display:block">信箱：</span> 
+                    </div>
+        
+                    <div class="usercon">
+                        <span style= "display:block">電話：</span>
+                    </div>
+                </div>  
+        
+        
+                <div class="userright">
+                    <div class="usercon">
+                        <span style= "display:block; width: 200px;">名字是</span> 
+                        
+                    </div>
+        
+                    <div class="usercon">
+                        <span style= "display:block">test@gmail</span> 
+                        
+                    </div>
+        
+                    <div class="usercon">
+                        <span style= "display:block">0123654789</span> 
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="content"><!-- 訂單-2 -->
+         
+                <main class="table">
+                    <section class="table__header">
+                        <h1 style="color: black;">#A5846</h1><!-- 訂單編號 -->
+                        
+                        
+                    </section>
+                    <section class="table__body">
+                        <table>
+                            <thead>
+                                <tr style="text-align:center;" >
+                                    
+                                    <th  style="vertical-align:middle;"> Product </th>
+                                    <th style="vertical-align:middle; width: 20%;"> QUANTITY</th>
+                                    <th style="vertical-align:middle;"> TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><!-- Good-per -->
+                                    <td style="text-align: center;"><img src="images/10III.png" style="display: flex;" alt=""> <p style="position: relative; top: 10px;  right: 7%;">Alson GC</p> </td>
+                                    <td style=" display: flex; align-items: center; justify-content: center; position: relative; top: 10px;"> 1 </td>
+                                    
+                                    <td style="text-align: center;"> $  <p style="display:inline;">615</p>  NTD </td>   
+                                </tr>
+                                
+                                
+                                
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+            </div>
+
+        <div class="content">
+            <h2>3</h2>
+            <p>Lorem ipsum dolor sit, amet consect
+                etur adipisicing elit. Voluptate com
+                modi eos voluptates fugit accusamus minima eius a iste veniam tenetur, quos autem ex architec
+                to esse praesentium perspiciatis v
+                eritatis odio tempore!
+            </p>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/10III.png" style="width:100%">
-            <div class="text">Caption Three</div>
+
+        <div class="content">
+            <h2>4</h2>
+            <p>Lorem ipsum dolor sit, amet consect
+                etur adipisicing elit. Voluptate com
+                modi eos voluptates fugit accusamus minima eius a iste veniam tenetur, quos autem ex architec
+                to esse praesentium perspiciatis v
+                eritatis odio tempore!
+            </p>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-   
+    <script>
+       const tabs= document.querySelectorAll('.tab_btn');
+            const all_content= document.querySelectorAll('.content');
+
+            tabs.forEach((tab,index)=>{
+                tab.addEventListener('click',(e)=>{
+                    tabs.forEach(tab=>{tab.classList.remove('active')});
+                    tab.classList.add('active');
+
+                    var line=document.querySelector('.line');
+                line.style.width = e.target.offsetWidth+"px";
+                line.style.left = e.target.offsetLeft+"px";
+
+                all_content.forEach(content=>{content.classList.remove('active')});
+                all_content[index].classList.add('active');
+                })
+               
+            })
+
+    </script>
 </body>
 </html>
