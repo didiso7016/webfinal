@@ -87,6 +87,7 @@ ul {
 
 
 .footer {
+	position: relative;
 	padding: 10px;
 	color: #444444;
 	text-align: center;
