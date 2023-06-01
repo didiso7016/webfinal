@@ -3,6 +3,7 @@
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 #page-wrapper {
@@ -87,15 +88,15 @@ ul {
 
 
 .footer {
-	position: relative;
-	padding: 10px;
+	padding: 20px;
 	color: #444444;
 	text-align: center;
-	line-height: 30px;
-	left: 0;
 	bottom: 0;
+	position: relative;
 	width: 100%;
+	margin-top: 20px;
 }
+
 
 
 
